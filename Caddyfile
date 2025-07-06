@@ -1,0 +1,7 @@
+liavv.biz {
+  root * /srv/app/client/dist
+  file_server
+  reverse_proxy /api/* server:5000
+
+  # חשוב: Caddy כבר מנהל ACME לבד
+}
